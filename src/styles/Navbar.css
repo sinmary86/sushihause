@@ -1,0 +1,169 @@
+.navbar {
+    display: flex;
+    position: fixed; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: relative;
+    z-index: 10;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-img {
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ed3933;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ed3933;
+    height: 100%;
+    padding: 0px 10px;
+    gap: 20px;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: #f56a79;
+}
+
+h4 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+.burger {
+    display: none; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px;
+    cursor: pointer;
+    color: #fff;
+    height: 100%; /* Занимает всю высоту nav */
+    padding: 0px 20px;
+    background-color: #ed3933;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; 
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Анимация для открытого бургера */
+.burger.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .burger {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        background-color: #ed3933;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1); 
+        width: 100%;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .nav-links.open {
+        display: flex; 
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .cart-container {
+        position: absolute;
+        right: 60px;
+        top: 0;
+        height: 60px; 
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding: 0 10px;
+    }
+
+    .cart-item {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+}
+
+

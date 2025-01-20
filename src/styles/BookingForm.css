@@ -1,0 +1,121 @@
+.booking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 20px;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .map-container {
+    flex: 1;
+    min-width: 400px; 
+    max-width: 600px; 
+    height: 400px; 
+    border: 1px solid #444;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  
+  .form-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 20px;
+  }
+
+.form-row {
+    display: flex;
+    gap: 20px; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-field {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+  }  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+  }
+  
+  form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ccc;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    width: 99%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-field textarea {
+    width: 97%;
+    padding: 7px;
+    font-size: 0.9rem;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    resize: none; 
+    height: 40px; 
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-bottom: 1px solid #ec3934;
+  }
+
+  form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #ec3934;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+  }
+  
+  form button:hover {
+    background-color: #ec3934;
+    color: #fff;
+  }
+  
+
+.custom-swal-button {
+  background-color: #ec3934; 
+  color: #fff; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.custom-swal-button:hover {
+  background-color: #b72c2a; 
+}

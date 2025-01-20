@@ -1,0 +1,31 @@
+.categories-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin-top: 80px;
+  }
+  
+  .categoryButton {
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #444;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    max-width: 300px; 
+    text-align: center;
+  }
+  
+  /* Стили при нажатии */
+  .categoryButtonSelected {
+    background-color: red; 
+  }
+  
+  .categoryButton:hover {
+    background-color: rgb(172, 241, 36); 
+  }
+  

@@ -1,0 +1,15 @@
+
+.restaurants-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}

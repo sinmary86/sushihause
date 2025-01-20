@@ -1,0 +1,152 @@
+.homepage {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+.homepage-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.homepage-content h1 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.homepage-content h3 {
+    font-size: 2rem;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 80px; 
+    margin-top: 40px;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.btnLink {
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #776060;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease, transform 0.2s ease;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -2px -2px 8px rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    padding: 5px 20px;
+}
+
+.btnLink span {
+    position: relative;
+    z-index: 2;
+}
+
+.btnLink:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ec3934;
+    z-index: 1;
+    transition: all 0.35s;
+}
+
+.btnLink:hover {
+    color: #fff;
+}
+
+.btnLink:hover:after {
+    width: 100%; 
+}
+
+@media (max-width: 768px) {
+
+    .homepage-content {
+        top: 40%; 
+        left: 50%;
+        transform: translate(-50%, -30%);
+        padding: 0 20px; 
+    }
+
+    .homepage-content h1 {
+        font-size: 2.5rem; 
+        letter-spacing: 1px;
+    }
+
+    .homepage-content h3 {
+        font-size: 1.5rem; 
+    }
+
+    .button-row {
+        gap: 20px; 
+        margin-top: 20px;
+        flex-direction: column; 
+    }
+
+    .btn a {
+        font-size: 16px; 
+        line-height: 25px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-content {
+        top: 20%; 
+        transform: translate(-50%, -20%);
+    }
+
+    .homepage-content h1 {
+        font-size: 2rem; 
+    }
+
+    .homepage-content h3 {
+        font-size: 1.2rem; 
+    }
+
+    .btn a {
+        font-size: 14px; 
+       
+    }
+}
