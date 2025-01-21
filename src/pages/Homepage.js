@@ -32,7 +32,7 @@ const Homepage = () => {
         <video className="background-video" src="/sushivideo.mp4" autoPlay loop muted />
             
             <div className="navbar-overlay">
-                <Navbar />
+                <Navbar menuOpen={menuOpen}/>
             </div>
 
 

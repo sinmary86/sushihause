@@ -31,7 +31,7 @@ const Navbar = () => {
                     <span className="brand-name">SUSHI HAUSE</span>
                 </div>
 
-                {/* Навигационные ссылки */}
+            
                 <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                 <li>
                         <Link to="/" onClick={toggleMenu}>STARTSEITE</Link>
