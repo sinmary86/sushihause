@@ -13,8 +13,8 @@ const RestaurantsGrid = () => {
                         className="restaurant-image"
                     />
                     <div className="restaurant-overlay">
-                        <h7>{restaurant.address}</h7>
-                        <h8>{restaurant.phone}</h8>
+                        <h5>{restaurant.address}</h5>
+                        <h6>{restaurant.phone}</h6>
                     </div>
                 </div>
             ))}
